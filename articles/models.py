@@ -11,7 +11,7 @@ class Articles(models.Model):
     author = models.CharField(max_length=50)
 
     class Meta:
-        verbose_name_plural = 'News'
+        verbose_name_plural = 'Articles'
 
     def get_detail_url(self):
         return reverse('articles:detail', args=[self.pk])
